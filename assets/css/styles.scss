@@ -191,7 +191,8 @@ body {
 			flex-wrap: wrap;
 		}
 		@media (max-width: 767px) {
-			padding-top: 75px;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 	.data {
@@ -239,10 +240,16 @@ body {
 		}
 		.desc {
 			margin-top: 20px;
+			@media (max-width: 767px) {
+				margin-top: 5px;
+			}
 		}
 		.timer {
 			text-align: center;
 			margin-top: 20px;
+			@media (max-width: 767px) {
+				margin-top: 5px;
+			}
 			span {
 				background: #ef2915;
 				border-radius: 6px;
@@ -322,6 +329,8 @@ body {
 	}
 	.only__sm__md {
 		display: none;
+		margin: 0 auto;
+		text-align: center;
 		@media (max-width: 991px) {
 			display: block;
 			margin-bottom: 10px;
@@ -345,6 +354,9 @@ body {
 			list-style: decimal;
 			width: fit-content;
 			margin-bottom: 20px;
+		}
+		@media (max-width: 767px) {
+			margin-top: 10px;
 		}
 	}
 
@@ -400,6 +412,7 @@ body {
 		border: 1px solid #010101;
 		padding: 8px;
 		width: 50%;
+		vertical-align: baseline;
 	}
 }
 
@@ -477,10 +490,19 @@ body {
 }
 
 .mt-4 {
-	margin-top: 1.5rem;
+	margin-top: 1.5rem !important;
 	@media (max-width: 991px) {
-		margin-top: 5px;
+		margin-top: 5px !important;
 	}
+}
+.mt-6 {
+	@media (max-width: 767px) {
+		margin-top: 5.5rem !important;
+	}
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
 }
 
 .thumbnails-a .videoCube.syndicatedItem {
