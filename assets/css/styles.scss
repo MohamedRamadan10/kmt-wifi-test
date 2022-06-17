@@ -257,10 +257,7 @@ body {
 		top: 30px;
 		left: 30px;
 		@media (max-width: 767px) {
-			position: relative;
-			top: inherit;
-			left: inherit;
-			text-align: center;
+			display: none;
 		}
 	}
 	.right__banner {
