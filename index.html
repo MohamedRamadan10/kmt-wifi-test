@@ -12,6 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/lib/videojs-vast-plugin-master/videojs.vast.css">
+    <script src="http://vjs.zencdn.net/4.4.3/video.js"></script>
+    <script src="assets/lib/videojs-vast-plugin-master/lib/vast-client.js"></script>
+    <script src="assets/lib/videojs-vast-plugin-master/lib/videojs-contrib-ads/videojs.ads.js"></script>
+    <script src="assets/lib/videojs-vast-plugin-master/videojs.vast.js"></script>
 </head>
 
 <body>
@@ -129,6 +134,28 @@
     </div>
 
     <div class="blogs">
+        <div class="right__blog">
+            <script async="async" data-cfasync="false"
+                src="//producercoconutgroup.com/1d006cf28b45e35b1fd4db106a9dd1d0/invoke.js"></script>
+            <div id="container-1d006cf28b45e35b1fd4db106a9dd1d0"></div>
+        </div>
+
+        <div class="left__blog">
+            <div class="video__container">
+                <video id="vid2" class="video-js vjs-default-skin" autoplay controls preload="auto"
+                    poster="http://video-js.zencoder.com/oceans-clip.png" data-setup='{}' style="width: 100%;"
+                    height='400'>
+                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
+                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
+                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg'>
+                    <p>Video Playback Not Supported</p>
+                </video>
+            </div>
+        </div>
+
+        <img src="assets/images/train.webp" class="train-1" alt="train-1">
+        <img src="assets/images/train.webp" class="train-2" alt="train-2">
+
         <div class="container">
             <div class="text__center heading">
                 <h2>المقالات</h2>
@@ -149,13 +176,60 @@
                             <img src="assets/images/blog-2.webp" alt="blog-2">
                         </div>
                         <div class="desc">
-                            <h3>تعتبر مصر أقدم وجهة سفر في العالم ، وتقدم للزوار عطلة تجمع بين الثقافة والمغامرة والاسترخاء </h3>
+                            <h3>تعتبر مصر أقدم وجهة سفر في العالم ، وتقدم للزوار عطلة تجمع بين الثقافة والمغامرة
+                                والاسترخاء </h3>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="img">
+                            <img src="assets/images/blog-3.webp" alt="blog-3">
+                        </div>
+                        <div class="desc">
+                            <h3>منذ يناير 2022 ، يتعين على جميع الشركات التي تقوم بتحميل المواد الخطرة أو نقلها </h3>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="img">
+                            <img src="assets/images/blog-4.webp" alt="blog-4">
+                        </div>
+                        <div class="desc">
+                            <h3>توفير التكاليف الخارجية وانخفاض معدل الحوادث والتلوث وتقليل البصمة الكربونية من أهم
+                                مزايا القطار للبيئة: </h3>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="img">
+                            <img src="assets/images/blog-5.webp" alt="blog-6">
+                        </div>
+                        <div class="desc">
+                            <h3>اعتبارًا من 1 أبريل من هذا العام ، سيتم إجراء عمليات التدقيق وفقًا لـ V.5-2017 من معيار
+                                BASC ، والذي سنذكرك فيه كل شهر ببعض المفاهيم الأساسية والرئيسية لتنفيذ وصيانة نظام
+                                الإدارة ، ووضع نصائح تشير إلى معيار الأمن الدولي 5.0.1. والتعامل مع رقم في كل نشرة.</h3>
+                        </div>
+                    </a>
+                    <a href="" class="item">
+                        <div class="img">
+                            <img src="assets/images/blog-6.webp" alt="blog-6">
+                        </div>
+                        <div class="desc">
+                            <h3>يعني الأمن التدابير أو الاحتياطات الواجب اتخاذها لتقليل السرقة أو الاستخدام غير السليم
+                                للبضائع الخطرة التي يمكن أن تعرض الأشخاص أو الممتلكات أو البيئة للخطر. </h3>
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        var vid2 = videojs('vid2');
+
+        vid2.muted(true);
+        vid2.ads();
+        vid2.vast({
+            url: 'https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250'
+        });
+    </script>
 </body>
 
 </html>
