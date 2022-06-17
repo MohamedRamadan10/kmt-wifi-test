@@ -7,16 +7,202 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="assets/lib/videojs-vast-plugin-master/videojs.vast.css">
-    <script src="http://vjs.zencdn.net/4.4.3/video.js"></script>
-    <script src="assets/lib/videojs-vast-plugin-master/lib/vast-client.js"></script>
+    <script src="http://vjs.zencdn.net/4.7.1/video.js"></script>
     <script src="assets/lib/videojs-vast-plugin-master/lib/videojs-contrib-ads/videojs.ads.js"></script>
+    <script src="assets/lib/videojs-vast-plugin-master/lib/vast-client.js"></script>
     <script src="assets/lib/videojs-vast-plugin-master/videojs.vast.js"></script>
+    <script>
+        var vid2 = videojs('vid2');
+
+        vid2.muted(true);
+        vid2.ads();
+        vid2.vast({
+            url: 'https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250'
+        });
+    </script>
+
+    <script type="text/javascript" async="true">
+        (function () {
+            var host = 'www.themoneytizer.com';
+            var element = document.createElement('script');
+            var firstScript = document.getElementsByTagName('script')[0];
+            var url = 'https://quantcast.mgr.consensu.org'
+                .concat('/choice/', '6Fv0cGNfc_bw8', '/', host, '/choice.js');
+            var uspTries = 0;
+            var uspTriesLimit = 3;
+            element.async = true;
+            element.type = 'text/javascript';
+            element.src = url;
+
+            firstScript.parentNode.insertBefore(element, firstScript);
+
+            function makeStub() {
+                var TCF_LOCATOR_NAME = '__tcfapiLocator';
+                var queue = [];
+                var win = window;
+                var cmpFrame;
+
+                function addFrame() {
+                    var doc = win.document;
+                    var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+                    if (!otherCMP) {
+                        if (doc.body) {
+                            var iframe = doc.createElement('iframe');
+
+                            iframe.style.cssText = 'display:none';
+                            iframe.name = TCF_LOCATOR_NAME;
+                            doc.body.appendChild(iframe);
+                        } else {
+                            setTimeout(addFrame, 5);
+                        }
+                    }
+                    return !otherCMP;
+                }
+
+                function tcfAPIHandler() {
+                    var gdprApplies;
+                    var args = arguments;
+
+                    if (!args.length) {
+                        return queue;
+                    } else if (args[0] === 'setGdprApplies') {
+                        if (
+                            args.length > 3 &&
+                            args[2] === 2 &&
+                            typeof args[3] === 'boolean'
+                        ) {
+                            gdprApplies = args[3];
+                            if (typeof args[2] === 'function') {
+                                args[2]('set', true);
+                            }
+                        }
+                    } else if (args[0] === 'ping') {
+                        var retr = {
+                            gdprApplies: gdprApplies,
+                            cmpLoaded: false,
+                            cmpStatus: 'stub'
+                        };
+
+                        if (typeof args[2] === 'function') {
+                            args[2](retr);
+                        }
+                    } else {
+                        queue.push(args);
+                    }
+                }
+
+                function postMessageEventHandler(event) {
+                    var msgIsString = typeof event.data === 'string';
+                    var json = {};
+
+                    try {
+                        if (msgIsString) {
+                            json = JSON.parse(event.data);
+                        } else {
+                            json = event.data;
+                        }
+                    } catch (ignore) { }
+
+                    var payload = json.__tcfapiCall;
+
+                    if (payload) {
+                        window.__tcfapi(
+                            payload.command,
+                            payload.version,
+                            function (retValue, success) {
+                                var returnMsg = {
+                                    __tcfapiReturn: {
+                                        returnValue: retValue,
+                                        success: success,
+                                        callId: payload.callId
+                                    }
+                                };
+                                if (msgIsString) {
+                                    returnMsg = JSON.stringify(returnMsg);
+                                }
+                                event.source.postMessage(returnMsg, '*');
+                            },
+                            payload.parameter
+                        );
+                    }
+                }
+
+                while (win) {
+                    try {
+                        if (win.frames[TCF_LOCATOR_NAME]) {
+                            cmpFrame = win;
+                            break;
+                        }
+                    } catch (ignore) { }
+
+                    if (win === window.top) {
+                        break;
+                    }
+                    win = win.parent;
+                }
+                if (!cmpFrame) {
+                    addFrame();
+                    win.__tcfapi = tcfAPIHandler;
+                    win.addEventListener('message', postMessageEventHandler, false);
+                }
+            };
+
+            if (typeof module !== 'undefined') {
+                module.exports = makeStub;
+            } else {
+                makeStub();
+            }
+
+            var uspStubFunction = function () {
+                var arg = arguments;
+                if (typeof window.__uspapi !== uspStubFunction) {
+                    setTimeout(function () {
+                        if (typeof window.__uspapi !== 'undefined') {
+                            window.__uspapi.apply(window.__uspapi, arg);
+                        }
+                    }, 500);
+                }
+            };
+
+            var checkIfUspIsReady = function () {
+                uspTries++;
+                if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+                    console.warn('USP is not accessible');
+                } else {
+                    clearInterval(uspInterval);
+                }
+            };
+
+            if (typeof window.__uspapi === 'undefined') {
+                window.__uspapi = uspStubFunction;
+                var uspInterval = setInterval(checkIfUspIsReady, 6000);
+            }
+        })();
+    </script>
 </head>
 
 <body>
@@ -27,6 +213,9 @@
                 <a href="">من نحن</a>
                 <a href="">المقالات</a>
                 <a href="">اتصل بنا</a>
+            </div>
+            <div class="menu__btn">
+                <span></span><span></span><span></span>
             </div>
             <div class="logo">
                 <img src="assets/images/kmt.webp" alt="kmt">
@@ -135,23 +324,14 @@
 
     <div class="blogs">
         <div class="right__blog">
-            <script async="async" data-cfasync="false"
-                src="//producercoconutgroup.com/1d006cf28b45e35b1fd4db106a9dd1d0/invoke.js"></script>
-            <div id="container-1d006cf28b45e35b1fd4db106a9dd1d0"></div>
-        </div>
-
-        <div class="left__blog">
-            <div class="video__container">
-                <video id="vid2" class="video-js vjs-default-skin" autoplay controls preload="auto"
-                    poster="http://video-js.zencoder.com/oceans-clip.png" data-setup='{}' style="width: 100%;"
-                    height='400'>
-                    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4'>
-                    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm'>
-                    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg'>
-                    <p>Video Playback Not Supported</p>
-                </video>
+            <div class="sidebar">
+                <script async="async" data-cfasync="false"
+                    src="//producercoconutgroup.com/1d006cf28b45e35b1fd4db106a9dd1d0/invoke.js"></script>
+                <div id="container-1d006cf28b45e35b1fd4db106a9dd1d0"></div>
             </div>
         </div>
+
+
 
         <img src="assets/images/train.webp" class="train-1" alt="train-1">
         <img src="assets/images/train.webp" class="train-2" alt="train-2">
@@ -217,19 +397,85 @@
                         </div>
                     </a>
                 </div>
+                <div class="see__all">
+                    <a href="">
+                        <span>المزيد</span>
+                        <img src="assets/images/arrow.svg" alt="arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="left__blog">
+            <div class="sidebar">
+                <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+                <video id="video-id">
+                    <source src="video.mp4" type="video/mp4" />
+                    <script>
+                        var myFP = fluidPlayer(
+                            'video-id', {
+                            "layoutControls": {
+                                "controlBar": {
+                                    "autoHideTimeout": 3,
+                                    "animated": true,
+                                    "autoHide": true
+                                },
+                                "htmlOnPauseBlock": {
+                                    "html": null,
+                                    "height": null,
+                                    "width": null
+                                },
+                                "autoPlay": false,
+                                "mute": true,
+                                "allowTheatre": true,
+                                "playPauseAnimation": false,
+                                "playbackRateEnabled": false,
+                                "allowDownload": false,
+                                "playButtonShowing": false,
+                                "fillToContainer": false,
+                                "posterImage": ""
+                            },
+                            "vastOptions": {
+                                "adList": [
+                                    {
+                                        "roll": "preRoll",
+                                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250",
+                                        "adText": ""
+                                    },
+                                    {
+                                        "roll": "midRoll",
+                                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250",
+                                        "adText": ""
+                                    },
+                                    {
+                                        "roll": "postRoll",
+                                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250",
+                                        "adText": ""
+                                    }
+                                ],
+                                "adCTAText": false,
+                                "adCTATextPosition": ""
+                            }
+                        });
+                    </script>
             </div>
         </div>
     </div>
 
-    <script>
-        var vid2 = videojs('vid2');
 
-        vid2.muted(true);
-        vid2.ads();
-        vid2.vast({
-            url: 'https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250'
-        });
-    </script>
+    <div class="footer">
+        <div class="container">
+            <a href="https://www.enr.gov.eg/Ar/Default.aspx" target="_blank" class="logo">
+                <img src="assets/images/logo.webp" alt="logo">
+            </a>
+            <a href="" class="link">الأحكام والشروط</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="assets/lib/theia/reizesensor.min.js"></script>
+    <script src="assets/lib/theia/theia.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
 </body>
 
 </html>
