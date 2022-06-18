@@ -588,6 +588,10 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	@media (max-width: 767px) {
+		padding-right: 0;
+		padding-left: 0;
+	}
 	.container {
 		background: #fff;
 		box-shadow: 0 3px 10px rgba(#000, 0.15);
