@@ -137,11 +137,14 @@ $redColor: #ee2216;
 	overflow: hidden;
 }
 
+.wrapper {
+	overflow-x: hidden;
+}
+
 body {
 	font-family: "Tajawal", sans-serif;
 	font-weight: 600;
 	background: #fff;
-	overflow-x: hidden;
 }
 
 .text__center {
