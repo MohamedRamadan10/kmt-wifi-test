@@ -34,6 +34,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/cloudinary-video-player@edge/dist/cld-video-player.min.css">
     <script type="text/javascript" async="true">
         (function () {
             var host = 'www.themoneytizer.com';
@@ -193,7 +194,7 @@
             }
         })();
     </script>
-    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+
     <div id="95063-24">
         <script src="//ads.themoneytizer.com/s/gen.js?type=24"></script>
         <script src="//ads.themoneytizer.com/s/requestform.js?siteId=95063&formatId=24"></script>
@@ -314,56 +315,11 @@
                 </div>
 
                 <div id="video__container" class="mt-4">
-                    <video id="video-id-one" playsinline muted loop style="width: 80%; margin: 0 auto;">
-                        <source src="video.mp4" type="video/mp4" />
-                        <script>
-                            var myFP = fluidPlayer(
-                                'video-id-one', {
-                                "layoutControls": {
-                                    "controlBar": {
-                                        "autoHideTimeout": 3,
-                                        "animated": true,
-                                        "autoHide": true
-                                    },
-                                    "htmlOnPauseBlock": {
-                                        "html": null,
-                                        "height": null,
-                                        "width": null
-                                    },
-                                    "autoPlay": true,
-                                    "mute": true,
-                                    "allowTheatre": true,
-                                    "playPauseAnimation": false,
-                                    "playbackRateEnabled": false,
-                                    "allowDownload": false,
-                                    "playButtonShowing": false,
-                                    "fillToContainer": false,
-                                    "posterImage": "",
-                                    "loop": true
-                                },
-                                "vastOptions": {
-                                    "adList": [
-                                        {
-                                            "roll": "preRoll",
-                                            "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250",
-                                            "adText": ""
-                                        },
-                                        {
-                                            "roll": "midRoll",
-                                            "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250",
-                                            "adText": ""
-                                        },
-                                        {
-                                            "roll": "postRoll",
-                                            "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250",
-                                            "adText": ""
-                                        }
-                                    ],
-                                    "adCTAText": false,
-                                    "adCTATextPosition": ""
-                                }
-                            });
-                        </script>
+                    <div class="video__container">
+                        <video id="example-player" playsinline controls muted autoplay
+                            class="cld-video-player cld-video-player-skin-dark cld-fluid">
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
@@ -382,146 +338,6 @@
         </div>
     </div>
 
-    <div class="blogs">
-        <div class="right__blog">
-            <div class="sidebar">
-                <script async="async" data-cfasync="false"
-                    src="//producercoconutgroup.com/1d006cf28b45e35b1fd4db106a9dd1d0/invoke.js"></script>
-                <div id="container-1d006cf28b45e35b1fd4db106a9dd1d0"></div>
-            </div>
-        </div>
-
-
-
-        <img src="assets/images/train.webp" class="train-1" alt="train-1">
-        <img src="assets/images/train.webp" class="train-2" alt="train-2">
-
-        <div class="container">
-            <div class="text__center heading">
-                <h2>المقالات</h2>
-            </div>
-            <div class="items">
-                <div class="row">
-                    <a href="" class="item">
-                        <div class="img">
-                            <img src="assets/images/blog-1.webp" alt="blog-1">
-                        </div>
-                        <div class="desc">
-                            <h3>توفير التكاليف الخارجية وانخفاض معدل الحوادث والتلوث وتقليل البصمة الكربونية من أهم
-                                مزايا القطار للبيئة:</h3>
-                        </div>
-                    </a>
-                    <a href="" class="item">
-                        <div class="img">
-                            <img src="assets/images/blog-2.webp" alt="blog-2">
-                        </div>
-                        <div class="desc">
-                            <h3>تعتبر مصر أقدم وجهة سفر في العالم ، وتقدم للزوار عطلة تجمع بين الثقافة والمغامرة
-                                والاسترخاء </h3>
-                        </div>
-                    </a>
-                    <a href="" class="item">
-                        <div class="img">
-                            <img src="assets/images/blog-3.webp" alt="blog-3">
-                        </div>
-                        <div class="desc">
-                            <h3>منذ يناير 2022 ، يتعين على جميع الشركات التي تقوم بتحميل المواد الخطرة أو نقلها </h3>
-                        </div>
-                    </a>
-                    <a href="" class="item">
-                        <div class="img">
-                            <img src="assets/images/blog-4.webp" alt="blog-4">
-                        </div>
-                        <div class="desc">
-                            <h3>توفير التكاليف الخارجية وانخفاض معدل الحوادث والتلوث وتقليل البصمة الكربونية من أهم
-                                مزايا القطار للبيئة: </h3>
-                        </div>
-                    </a>
-                    <a href="" class="item">
-                        <div class="img">
-                            <img src="assets/images/blog-5.webp" alt="blog-6">
-                        </div>
-                        <div class="desc">
-                            <h3>اعتبارًا من 1 أبريل من هذا العام ، سيتم إجراء عمليات التدقيق وفقًا لـ V.5-2017 من معيار
-                                BASC ، والذي سنذكرك فيه كل شهر ببعض المفاهيم الأساسية والرئيسية لتنفيذ وصيانة نظام
-                                الإدارة ، ووضع نصائح تشير إلى معيار الأمن الدولي 5.0.1. والتعامل مع رقم في كل نشرة.</h3>
-                        </div>
-                    </a>
-                    <a href="" class="item">
-                        <div class="img">
-                            <img src="assets/images/blog-6.webp" alt="blog-6">
-                        </div>
-                        <div class="desc">
-                            <h3>يعني الأمن التدابير أو الاحتياطات الواجب اتخاذها لتقليل السرقة أو الاستخدام غير السليم
-                                للبضائع الخطرة التي يمكن أن تعرض الأشخاص أو الممتلكات أو البيئة للخطر. </h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="see__all">
-                    <a href="">
-                        <span>المزيد</span>
-                        <img src="assets/images/arrow.svg" alt="arrow">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="left__blog">
-            <div class="sidebar">
-                <video id="video-id" playsinline muted loop>
-                    <source src="video.mp4" type="video/mp4" />
-                    <script>
-                        var myFP = fluidPlayer(
-                            'video-id', {
-                            "layoutControls": {
-                                "controlBar": {
-                                    "autoHideTimeout": 3,
-                                    "animated": true,
-                                    "autoHide": true
-                                },
-                                "htmlOnPauseBlock": {
-                                    "html": null,
-                                    "height": null,
-                                    "width": null
-                                },
-                                "autoPlay": true,
-                                "mute": true,
-                                "allowTheatre": true,
-                                "playPauseAnimation": false,
-                                "playbackRateEnabled": false,
-                                "allowDownload": false,
-                                "playButtonShowing": false,
-                                "fillToContainer": false,
-                                "posterImage": ""
-                            },
-                            "vastOptions": {
-                                "adList": [
-                                    {
-                                        "roll": "preRoll",
-                                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250",
-                                        "adText": ""
-                                    },
-                                    {
-                                        "roll": "midRoll",
-                                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250",
-                                        "adText": ""
-                                    },
-                                    {
-                                        "roll": "postRoll",
-                                        "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250",
-                                        "adText": ""
-                                    }
-                                ],
-                                "adCTAText": false,
-                                "adCTATextPosition": ""
-                            }
-                        });
-                    </script>
-            </div>
-        </div>
-    </div>
-
-
     <div class="footer">
         <div class="container">
             <a href="https://www.enr.gov.eg/Ar/Default.aspx" target="_blank" class="logo">
@@ -530,12 +346,62 @@
             <a href="" class="link">الأحكام والشروط</a>
         </div>
     </div>
-    <script type="text/javascript" src="https://native-cdn.foxpush.io/kmt_foxpush_ads.js"></script>
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/theia/reizesensor.min.js"></script>
     <script src="assets/lib/theia/theia.min.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.js"></script>
+    <script src="https://unpkg.com/cloudinary-video-player@edge/dist/cld-video-player.min.js"></script>
+    <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+    <script>
+        var adTagUrl = "https://www.videosprofitnetwork.com/watch.xml?key=658f95c833c08fdd54727d44256ff250";
 
+        var cld = cloudinary.Cloudinary.new({ cloud_name: "demo" });
+
+        // Set video sources
+        var source1 = {
+            publicId: "snow_deer_short",
+        };
+
+        var source2 = {
+            publicId: "dirt_bike",
+        };
+
+        var source3 = {
+            publicId: "snow_horses",
+        };
+
+        var source4 = {
+            publicId: "finish_line",
+        };
+
+        var source5 = {
+            publicId: "snow_deer_short",
+        };
+        // sea_turtle
+        // elephants
+        // marmots
+
+
+        // Initialize player
+        var player = cld.videoPlayer("example-player", {
+            playlistWidget: {
+                direction: "horizontal",
+                total: 4
+            },
+            ads: { adTagUrl: adTagUrl }
+        });
+
+        var playlistSources = [source3, source2, source1, source4, source5];
+        var playlistOptions = {
+            autoAdvance: true,
+            repeat: true,
+            presentUpcoming: 8
+        };
+
+        player.playlist(playlistSources, playlistOptions);
+
+    </script>
 </body>
 
 </html>

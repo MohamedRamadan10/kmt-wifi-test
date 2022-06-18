@@ -352,6 +352,13 @@ body {
 			}
 		}
 	}
+	.video__container {
+		width: 50%;
+		margin: 0 auto;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
 }
 
 .blogs {
@@ -387,6 +394,9 @@ body {
 			text-align: center;
 			margin: 0 auto 30px;
 			max-width: 100%;
+		}
+		.video__container {
+			width: 290px;
 		}
 	}
 	.train-1,
@@ -669,4 +679,7 @@ body {
 			display: none;
 		}
 	}
+}
+.cld-plw-col-list {
+	display: none;
 }
