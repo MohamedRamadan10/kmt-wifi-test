@@ -140,6 +140,8 @@ $redColor: #ee2216;
 body {
 	font-family: "Tajawal", sans-serif;
 	font-weight: 600;
+	background: #fff;
+	overflow-x: hidden;
 }
 
 .text__center {
@@ -156,9 +158,31 @@ body {
 	padding: 0px 30px;
 }
 
+.widget__weather {
+	position: absolute;
+	top: 16px;
+	left: 50%;
+	display: flex;
+	transform-origin: center;
+	transform: translate(-50%, 0) scale(0.7);
+	@media (max-width: 991px) {
+		left: 24%;
+	}
+	@media (max-width: 767px) {
+		left: 50%;
+		top: 5px;
+	}
+	.icon {
+		max-width: 60px;
+		margin-right: 10px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
 .menu {
 	padding: 10px 0;
-	background: $lightBg;
 	@include menuShadow();
 	.container {
 		display: flex;
@@ -507,5 +531,139 @@ body {
 		color: #fff;
 		text-decoration: none;
 		font-weight: bold;
+	}
+}
+
+.internal__banner {
+	padding: 50px 0 100px;
+	background: #f3f4f6;
+	text-align: center;
+
+	.heading {
+		margin-top: 50px;
+		font-size: 35px;
+		color: $blackColor;
+		font-weight: bold;
+		position: relative;
+		@media (max-width: 1024px) {
+			margin-top: 0;
+		}
+		&::after {
+			content: "";
+			width: 100px;
+			height: 2px;
+			bottom: -5px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			background: $redColor;
+		}
+	}
+	.breadcrumb {
+		display: flex;
+		justify-content: center;
+		color: $blackColor;
+		margin-top: 30px;
+		.item {
+			&:not(:last-child) {
+				margin-left: 5px;
+			}
+			&.active {
+				color: $redColor;
+			}
+		}
+		a {
+			color: $blackColor;
+			text-decoration: none;
+		}
+	}
+	.lg {
+		@media (max-width: 1024px) {
+			display: none;
+		}
+	}
+}
+
+.contact__page {
+	padding: 0px 30px 50px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	.container {
+		background: #fff;
+		box-shadow: 0 3px 10px rgba(#000, 0.15);
+		border-radius: 15px;
+		position: relative;
+		padding: 100px 100px 25px;
+		width: 40%;
+		margin: -30px 30px 0;
+		height: fit-content;
+		@media (max-width: 1024px) {
+			width: 100%;
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+	}
+	.contact__info {
+		display: flex;
+		justify-content: space-between;
+		max-width: 600px;
+		margin: -136px auto 0;
+		flex-wrap: wrap;
+		@media (max-width: 767px) {
+			justify-content: space-evenly;
+		}
+		& > div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+			.icon {
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background: $redColor;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img {
+					width: 50px;
+					@media (max-width: 767px) {
+						width: 30px;
+					}
+				}
+				@media (max-width: 767px) {
+					width: 60px;
+					height: 60px;
+				}
+			}
+			a {
+				margin-top: 20px;
+				font-size: 20px;
+				color: $blackColor;
+				text-decoration: none;
+				transition: 0.3s all ease-in-out;
+				&.phone__num {
+					direction: ltr;
+				}
+				&:hover {
+					color: $redColor;
+				}
+			}
+		}
+	}
+	.banners__video {
+		margin-top: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.lg {
+		@media (max-width: 1024px) {
+			display: none;
+		}
 	}
 }
