@@ -7,33 +7,88 @@
 
 
 <url>
-  <loc>https://erwifi.net/kmt-wifi-test/</loc>
-  <lastmod>2022-06-21T13:48:19+00:00</lastmod>
+  <loc>https://erwifi.net/</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://erwifi.net/kmt-wifi-test/index.html</loc>
-  <lastmod>2022-06-21T13:48:19+00:00</lastmod>
+  <loc>https://erwifi.net/index.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://erwifi.net/kmt-wifi-test/about.html</loc>
-  <lastmod>2022-06-21T13:48:19+00:00</lastmod>
+  <loc>https://erwifi.net/about.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://erwifi.net/kmt-wifi-test/blogs/index.html</loc>
-  <lastmod>2022-06-21T13:48:19+00:00</lastmod>
+  <loc>https://erwifi.net/blogs/blog-1.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://erwifi.net/kmt-wifi-test/contact.html</loc>
-  <lastmod>2022-06-21T13:48:19+00:00</lastmod>
+  <loc>https://erwifi.net/blogs/blog-2.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://erwifi.net/kmt-wifi-test/terms.html</loc>
-  <lastmod>2022-06-21T13:48:19+00:00</lastmod>
+  <loc>https://erwifi.net/blogs/blog-4.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/blogs/blog-6.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/blogs/blog-8.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/blogs/blog-10.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/blogs/blog-11.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/blogs/blog-12.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/contact.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/blogs/blog-3.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/blogs/blog-5.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/blogs/blog-9.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/blogs/index.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://erwifi.net/terms.html</loc>
+  <lastmod>2022-06-21T15:15:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
