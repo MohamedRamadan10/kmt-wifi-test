@@ -279,6 +279,32 @@
          <script src="//ads.themoneytizer.com/s/gen.js?type=24"></script>
          <script src="//ads.themoneytizer.com/s/requestform.js?siteId=95063&formatId=24"></script>
       </div>
+      <script>
+         var secondsTwo = 30;
+         var fooTwo;
+
+         function redirectTwo() {
+            document.location.href =
+               "https://mohamedramadan10.github.io/kmt-wifi-test/connect.html";
+         }
+
+         function updateSecsTwo() {
+            document.getElementById("secondsTwo").innerHTML = secondsTwo;
+            secondsTwo--;
+            if (secondsTwo == -1) {
+               clearInterval(fooTwo);
+               redirectTwo();
+            }
+         }
+
+         function countdownTimer() {
+            fooTwo = setInterval(function () {
+               updateSecsTwo();
+            }, 1000);
+         }
+
+         countdownTimer();
+      </script>
    </head>
 
    <body>
@@ -466,7 +492,18 @@
                      );
                   </script>
                </div>
-
+               <div id="video__container" class="mt-4">
+                  <div class="video__container">
+                     <video
+                        id="example-player"
+                        playsinline
+                        controls
+                        muted
+                        autoplay
+                        class="cld-video-player cld-video-player-skin-dark cld-fluid"
+                     ></video>
+                  </div>
+               </div>
                <div class="data">
                   <div class="heading">
                      <h1>عيش علي <span>النت</span></h1>
@@ -480,19 +517,6 @@
                   </div>
                   <div class="desc">
                      <p>KMT نتمني لكم رحلة سعيدة</p>
-                  </div>
-               </div>
-
-               <div id="video__container" class="mt-4">
-                  <div class="video__container">
-                     <video
-                        id="example-player"
-                        playsinline
-                        controls
-                        muted
-                        autoplay
-                        class="cld-video-player cld-video-player-skin-dark cld-fluid"
-                     ></video>
                   </div>
                </div>
             </div>

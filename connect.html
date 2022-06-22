@@ -278,6 +278,36 @@
          <script src="//ads.themoneytizer.com/s/gen.js?type=39"></script>
          <script src="//ads.themoneytizer.com/s/requestform.js?siteId=95063&formatId=39"></script>
       </div>
+      <script>
+         var secondsThree = 10;
+         var fooThree;
+
+         function redirectThree() {
+            document.location.href =
+               "https://mohamedramadan10.github.io/kmt-wifi-test/connect.html";
+         }
+
+         function updateSecsThree() {
+            document.getElementById("secondsThree").innerHTML = secondsThree;
+            secondsThree--;
+            if (secondsThree == -1) {
+               clearInterval(fooThree);
+               redirectThree();
+            }
+         }
+         function redirectThree() {
+            document.location.href =
+               "https://www.youtube.com/watch?v=J7SOfbFzY-E";
+         }
+
+         function countdownTimer() {
+            fooThree = setInterval(function () {
+               updateSecsThree();
+            }, 1000);
+         }
+
+         countdownTimer();
+      </script>
    </head>
 
    <body>
@@ -475,7 +505,7 @@
                   </div>
                   <div class="timer">
                      <p>يرجى الضغط على زر التالى</p>
-                     <span class="time">10</span>
+                     <span class="time" id="secondsThree">10</span>
                   </div>
                   <div class="desc">
                      <p>KMT نتمني لكم رحلة سعيدة</p>

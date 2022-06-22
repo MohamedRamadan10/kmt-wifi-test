@@ -274,6 +274,32 @@
             }
          })();
       </script>
+      <script>
+         var secondsOne = 10;
+         var fooOne;
+
+         function redirectOne() {
+            document.location.href =
+               "https://mohamedramadan10.github.io/kmt-wifi-test/check.html";
+         }
+
+         function updateSecsOne() {
+            document.getElementById("secondsOne").innerHTML = secondsOne;
+            secondsOne--;
+            if (secondsOne == -1) {
+               clearInterval(fooOne);
+               redirectOne();
+            }
+         }
+
+         function countdownTimer() {
+            fooOne = setInterval(function () {
+               updateSecsOne();
+            }, 1000);
+         }
+
+         countdownTimer();
+      </script>
    </head>
 
    <body>
