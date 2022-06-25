@@ -609,9 +609,13 @@ body {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
+      position: relative;
+      z-index: 2147483647;
    }
 }
-
+[style="position: fixed; inset: 0px; z-index: 2147483647; background: black; opacity: 0.01; height: 957px; width: 1507px;"] {
+   z-index: calc(2147483647 - 10) !important;
+}
 .internal__banner {
    padding: 50px 0 100px;
    background: #f3f4f6;
