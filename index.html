@@ -275,18 +275,13 @@
          var secondsOne = 10;
          var fooOne;
 
-         function redirectOne() {
-            document.location.href =
-               "https://mohamedramadan10.github.io/kmt-wifi-test/check.html";
-         }
-
          function updateSecsOne() {
             document.getElementById("secondsOne").innerHTML = secondsOne;
             secondsOne--;
             if (secondsOne == -1) {
                clearInterval(fooOne);
-               document.getElementById("secondsOne").innerHTML = "التالي";
-               redirectOne();
+               document.getElementById("secondsOne").innerHTML =
+                  "<a href='https://mohamedramadan10.github.io/kmt-wifi-test/check.html' style='color: #fff;text-decoration: none'>التالي</a>";
             }
          }
 
