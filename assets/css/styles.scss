@@ -283,7 +283,7 @@ body {
          }
          .dropdown {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             position: absolute;
             bottom: 0;
             right: 0;
@@ -309,13 +309,7 @@ body {
             }
             .link {
                padding: 10px 10px;
-               flex: 0 0 44%;
-               max-width: 44%;
                a {
-                  display: -webkit-box;
-                  -webkit-line-clamp: 1;
-                  -webkit-box-orient: vertical;
-                  overflow: hidden;
                   font-size: 14px;
                   line-height: 21px;
                   @media (max-width: 767px) {
@@ -443,6 +437,9 @@ body {
    .right__blog {
       max-width: 19%;
       padding-right: 30px;
+      @media (min-width: 1025px) {
+         margin-top: -80px;
+      }
       @media (max-width: 1024px) {
          order: 3;
          padding-right: 0;
@@ -456,6 +453,9 @@ body {
    .left__blog {
       max-width: 30%;
       padding-left: 30px;
+      @media (min-width: 1025px) {
+         margin-top: -80px;
+      }
       @media (max-width: 1024px) {
          order: 1;
          padding-left: 0;
