@@ -121,7 +121,14 @@ table {
    border-collapse: collapse;
    border-spacing: 0;
 }
-
+img,
+picture,
+video,
+canvas,
+svg {
+   display: block;
+   max-width: 100%;
+}
 $lightBg: #f5f5f5;
 $blackColor: #0c0c0c;
 $redColor: #ee2216;
@@ -519,6 +526,7 @@ body {
       .item {
          margin-bottom: 30px;
          max-width: 32.333%;
+         flex: 0 0 32.333%;
          text-decoration: none;
          color: $blackColor;
          transition: 0.3s all ease-in-out;
@@ -885,4 +893,17 @@ body {
 
 .mb__0 {
    margin-bottom: 0 !important;
+}
+.rowNumbers {
+   counter-reset: step;
+   position: relative;
+   border-collapse: collapse;
+   width: 100%;
+   margin-bottom: 20px;
+   td {
+      border: 1px solid #010101;
+      padding: 8px;
+      width: 50%;
+      vertical-align: baseline;
+   }
 }
