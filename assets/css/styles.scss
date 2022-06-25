@@ -756,8 +756,10 @@ body {
    .banners__video {
       margin-top: 50px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-evenly;
+      @media (max-width: 767px) {
+         flex-wrap: wrap;
+      }
    }
    .lg {
       @media (max-width: 1024px) {

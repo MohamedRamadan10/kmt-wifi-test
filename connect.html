@@ -292,6 +292,7 @@
             secondsThree--;
             if (secondsThree == -1) {
                clearInterval(fooThree);
+               document.getElementById("secondsThree").innerHTML = "انتهاء";
                redirectThree();
             }
          }
@@ -344,7 +345,7 @@
                <a href="index.html" class="active">الرئيسية</a>
                <a href="about.html">من نحن</a>
                <div class="dropdown__menu">
-                  <a href="javascript:void(0)">المقالات </a>
+                  <a href="blogs/index.html">المقالات </a>
                   <div class="dropdown">
                      <div class="link">
                         <a href="blogs/blog-1.html"
