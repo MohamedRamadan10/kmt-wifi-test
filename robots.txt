@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /
-Sitemap: https://mohamedramadan10.github.io/kmt-wifi-test/sitemap.xml
+Sitemap: https://erwifi.net/sitemap.xml
