@@ -301,155 +301,95 @@
    </head>
 
    <body>
-      <div class="widget__weather">
-         <div id="openweathermap-widget-13"></div>
-         <script>
-            window.myWidgetParam
-               ? window.myWidgetParam
-               : (window.myWidgetParam = []);
-            window.myWidgetParam.push({
-               id: 13,
-               cityid: "360630",
-               appid: "d63804a43535e7cb806258ade1096c7f",
-               units: "metric",
-               containerid: "openweathermap-widget-13",
-            });
-            (function () {
-               var script = document.createElement("script");
-               script.async = true;
-               script.charset = "utf-8";
-               script.src =
-                  "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
-               var s = document.getElementsByTagName("script")[0];
-               s.parentNode.insertBefore(script, s);
-            })();
-         </script>
-         <div class="icon">
-            <img src="assets/images/cloud.svg" alt="Cloud" />
+      <div class="wrapper">
+         <div class="widget__weather">
+            <div id="openweathermap-widget-13"></div>
+            <script>
+               window.myWidgetParam
+                  ? window.myWidgetParam
+                  : (window.myWidgetParam = []);
+               window.myWidgetParam.push({
+                  id: 13,
+                  cityid: "360630",
+                  appid: "d63804a43535e7cb806258ade1096c7f",
+                  units: "metric",
+                  containerid: "openweathermap-widget-13",
+               });
+               (function () {
+                  var script = document.createElement("script");
+                  script.async = true;
+                  script.charset = "utf-8";
+                  script.src =
+                     "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+                  var s = document.getElementsByTagName("script")[0];
+                  s.parentNode.insertBefore(script, s);
+               })();
+            </script>
+            <div class="icon">
+               <img src="assets/images/cloud.svg" alt="Cloud" />
+            </div>
          </div>
-      </div>
-      <div class="menu">
-         <div class="container">
-            <div class="links">
-               <a href="index.html" class="active">الرئيسية</a>
-               <a href="about.html">من نحن</a>
-               <div class="dropdown__menu">
-                  <a href="blogs/index.html">المقالات </a>
-                  <div class="dropdown">
-                     <div class="link">
-                        <a href="blogs/blog-1.html"
-                           >5 نصائح أساسية لتحضير رحلتك إلى مصر
-                        </a>
-                     </div>
-                     <div class="link">
-                        <a href="blogs/blog-2.html">وحدات المناولة </a>
-                     </div>
-                     <div class="link">
-                        <a href="blogs/blog-4.html"> النقل بالسكك الحديدية </a>
-                     </div>
-                     <div class="link">
-                        <a href="blogs/blog-6.html"
-                           >إرشادات السلامة لوحدات الشحن ووحدات نقل البضائع
-                        </a>
-                     </div>
-                     <div class="link">
-                        <a href="blogs/blog-8.html"
-                           >السكك الحديدية النقل الأكثر استدامة للأشخاص والبضائع
-                        </a>
-                     </div>
-                     <div class="link">
-                        <a href="blogs/blog-10.html"
-                           >ما هو مستشار السلامة لنقل البضائع الخطرة
-                        </a>
-                     </div>
-                     <div class="link">
-                        <a href="blogs/blog-11.html"
-                           >وجبات خفيفة وصحية اثناء السفر</a
-                        >
-                     </div>
-                     <div class="link">
-                        <a href="blogs/blog-12.html"
-                           >يارا شلبي أول بطلة راليات مصرية</a
-                        >
-                     </div>
-                     <div class="link">
-                        <a href="blogs/index.html">المزيد</a>
+         <div class="menu">
+            <div class="container">
+               <div class="links">
+                  <a href="index.html" class="active">الرئيسية</a>
+                  <a href="about.html">من نحن</a>
+                  <div class="dropdown__menu">
+                     <a href="blogs/index.html">المقالات </a>
+                     <div class="dropdown">
+                        <div class="link">
+                           <a href="blogs/blog-1.html"
+                              >5 نصائح أساسية لتحضير رحلتك إلى مصر
+                           </a>
+                        </div>
+                        <div class="link">
+                           <a href="blogs/blog-2.html">وحدات المناولة </a>
+                        </div>
+                        <div class="link">
+                           <a href="blogs/blog-4.html"> النقل بالسكك الحديدية </a>
+                        </div>
+                        <div class="link">
+                           <a href="blogs/blog-6.html"
+                              >إرشادات السلامة لوحدات الشحن ووحدات نقل البضائع
+                           </a>
+                        </div>
+                        <div class="link">
+                           <a href="blogs/blog-8.html"
+                              >السكك الحديدية النقل الأكثر استدامة للأشخاص والبضائع
+                           </a>
+                        </div>
+                        <div class="link">
+                           <a href="blogs/blog-10.html"
+                              >ما هو مستشار السلامة لنقل البضائع الخطرة
+                           </a>
+                        </div>
+                        <div class="link">
+                           <a href="blogs/blog-11.html"
+                              >وجبات خفيفة وصحية اثناء السفر</a
+                           >
+                        </div>
+                        <div class="link">
+                           <a href="blogs/blog-12.html"
+                              >يارا شلبي أول بطلة راليات مصرية</a
+                           >
+                        </div>
+                        <div class="link">
+                           <a href="blogs/index.html">المزيد</a>
+                        </div>
                      </div>
                   </div>
+                  <a href="contact.html">اتصل بنا</a>
+                  <a href="terms.html">الأحكام و الشروط</a>
                </div>
-               <a href="contact.html">اتصل بنا</a>
-               <a href="terms.html">الأحكام و الشروط</a>
-            </div>
-            <div class="menu__btn"><span></span><span></span><span></span></div>
-            <div class="logo">
-               <img src="assets/images/kmt.webp" alt="kmt" />
+               <div class="menu__btn"><span></span><span></span><span></span></div>
+               <div class="logo">
+                  <img src="assets/images/kmt.webp" alt="kmt" />
+               </div>
             </div>
          </div>
-      </div>
-
-      <div class="banner">
-         <div class="right__banner">
-            <div class="right__top">
-               <script type="text/javascript">
-                  atOptions = {
-                     key: "35ff39a32a11726ae567e6f55ac6f50a",
-                     format: "iframe",
-                     height: 250,
-                     width: 300,
-                     params: {},
-                  };
-                  document.write(
-                     "<scr" +
-                        'ipt type="text/javascript" src="http' +
-                        (location.protocol === "https:" ? "s" : "") +
-                        '://producercoconutgroup.com/35ff39a32a11726ae567e6f55ac6f50a/invoke.js"></scr' +
-                        "ipt>"
-                  );
-               </script>
-            </div>
-
-            <div class="right__bottom mt__30">
-               <script type="text/javascript">
-                  atOptions = {
-                     key: "f5c757f6335305871036f950a6bada7a",
-                     format: "iframe",
-                     height: 300,
-                     width: 160,
-                     params: {},
-                  };
-                  document.write(
-                     "<scr" +
-                        'ipt type="text/javascript" src="http' +
-                        (location.protocol === "https:" ? "s" : "") +
-                        '://producercoconutgroup.com/f5c757f6335305871036f950a6bada7a/invoke.js"></scr' +
-                        "ipt>"
-                  );
-               </script>
-            </div>
-         </div>
-
-         <div class="container">
-            <div class="text__center">
-               <div class="center__top">
-                  <script type="text/javascript">
-                     atOptions = {
-                        key: "e0eae161e993e376968b667bcf16f00c",
-                        format: "iframe",
-                        height: 60,
-                        width: 468,
-                        params: {},
-                     };
-                     document.write(
-                        "<scr" +
-                           'ipt type="text/javascript" src="http' +
-                           (location.protocol === "https:" ? "s" : "") +
-                           '://producercoconutgroup.com/e0eae161e993e376968b667bcf16f00c/invoke.js"></scr' +
-                           "ipt>"
-                     );
-                  </script>
-               </div>
-
-               <div class="center__bottom">
+         <div class="banner">
+            <div class="right__banner">
+               <div class="right__top">
                   <script type="text/javascript">
                      atOptions = {
                         key: "35ff39a32a11726ae567e6f55ac6f50a",
@@ -467,69 +407,130 @@
                      );
                   </script>
                </div>
-
-               <div class="data">
-                  <div class="heading">
-                     <h1>عيش علي <span>النت</span></h1>
-                  </div>
-                  <div class="desc">
-                     <p>أستمتع بأنترنت مجاني لمدة 15 دقيقة</p>
-                  </div>
-                  <div class="timer">
-                     <p>يرجى الضغط على زر التالى</p>
-                     <span class="time" id="secondsThree"
-                        ><a
-                           href="https://www.youtube.com/watch?v=J7SOfbFzY-E"
-                           style="color: #fff; text-decoration: none"
-                           >انتهاء</a
-                        ></span
-                     >
-                  </div>
-                  <div class="desc">
-                     <p>KMT نتمني لكم رحلة سعيدة</p>
-                  </div>
+   
+               <div class="right__bottom mt__30">
+                  <script type="text/javascript">
+                     atOptions = {
+                        key: "f5c757f6335305871036f950a6bada7a",
+                        format: "iframe",
+                        height: 300,
+                        width: 160,
+                        params: {},
+                     };
+                     document.write(
+                        "<scr" +
+                           'ipt type="text/javascript" src="http' +
+                           (location.protocol === "https:" ? "s" : "") +
+                           '://producercoconutgroup.com/f5c757f6335305871036f950a6bada7a/invoke.js"></scr' +
+                           "ipt>"
+                     );
+                  </script>
                </div>
-
-               <div id="video__container" class="mt-4">
-                  <div class="video__container">
-                     <video
-                        id="example-player"
-                        playsinline
-                        controls
-                        muted
-                        autoplay
-                        class="cld-video-player cld-video-player-skin-dark cld-fluid"
-                     ></video>
+            </div>
+   
+            <div class="container">
+               <div class="text__center">
+                  <div class="center__top">
+                     <script type="text/javascript">
+                        atOptions = {
+                           key: "e0eae161e993e376968b667bcf16f00c",
+                           format: "iframe",
+                           height: 60,
+                           width: 468,
+                           params: {},
+                        };
+                        document.write(
+                           "<scr" +
+                              'ipt type="text/javascript" src="http' +
+                              (location.protocol === "https:" ? "s" : "") +
+                              '://producercoconutgroup.com/e0eae161e993e376968b667bcf16f00c/invoke.js"></scr' +
+                              "ipt>"
+                        );
+                     </script>
+                  </div>
+   
+                  <div class="center__bottom">
+                     <script type="text/javascript">
+                        atOptions = {
+                           key: "35ff39a32a11726ae567e6f55ac6f50a",
+                           format: "iframe",
+                           height: 250,
+                           width: 300,
+                           params: {},
+                        };
+                        document.write(
+                           "<scr" +
+                              'ipt type="text/javascript" src="http' +
+                              (location.protocol === "https:" ? "s" : "") +
+                              '://producercoconutgroup.com/35ff39a32a11726ae567e6f55ac6f50a/invoke.js"></scr' +
+                              "ipt>"
+                        );
+                     </script>
+                  </div>
+   
+                  <div class="data">
+                     <div class="heading">
+                        <h1>عيش علي <span>النت</span></h1>
+                     </div>
+                     <div class="desc">
+                        <p>أستمتع بأنترنت مجاني لمدة 15 دقيقة</p>
+                     </div>
+                     <div class="timer">
+                        <p>يرجى الضغط على زر التالى</p>
+                        <span class="time" id="secondsThree"
+                           ><a
+                              href="https://www.youtube.com/watch?v=J7SOfbFzY-E"
+                              style="color: #fff; text-decoration: none"
+                              >انتهاء</a
+                           ></span
+                        >
+                     </div>
+                     <div class="desc">
+                        <p>KMT نتمني لكم رحلة سعيدة</p>
+                     </div>
+                  </div>
+   
+                  <div id="video__container" class="mt-4">
+                     <div class="video__container">
+                        <video
+                           id="example-player"
+                           playsinline
+                           controls
+                           muted
+                           autoplay
+                           class="cld-video-player cld-video-player-skin-dark cld-fluid"
+                        ></video>
+                     </div>
                   </div>
                </div>
             </div>
+   
+            <div class="left__banner">
+               <script type="text/javascript">
+                  atOptions = {
+                     key: "374102d00041b832ff247076733c6d4f",
+                     format: "iframe",
+                     height: 600,
+                     width: 160,
+                     params: {},
+                  };
+                  document.write(
+                     "<scr" +
+                        'ipt type="text/javascript" src="http' +
+                        (location.protocol === "https:" ? "s" : "") +
+                        '://producercoconutgroup.com/374102d00041b832ff247076733c6d4f/invoke.js"></scr' +
+                        "ipt>"
+                  );
+               </script>
+            </div>
          </div>
-
-         <div class="left__banner">
-            <script type="text/javascript">
-               atOptions = {
-                  key: "374102d00041b832ff247076733c6d4f",
-                  format: "iframe",
-                  height: 600,
-                  width: 160,
-                  params: {},
-               };
-               document.write(
-                  "<scr" +
-                     'ipt type="text/javascript" src="http' +
-                     (location.protocol === "https:" ? "s" : "") +
-                     '://producercoconutgroup.com/374102d00041b832ff247076733c6d4f/invoke.js"></scr' +
-                     "ipt>"
-               );
-            </script>
-         </div>
+         <script
+            async="async"
+            data-cfasync="false"
+            src="//producercoconutgroup.com/1d006cf28b45e35b1fd4db106a9dd1d0/invoke.js"
+         ></script>
+         <div id="container-1d006cf28b45e35b1fd4db106a9dd1d0"></div>
       </div>
-      <script
-         async="async"
-         data-cfasync="false"
-         src="//producercoconutgroup.com/1d006cf28b45e35b1fd4db106a9dd1d0/invoke.js"
-      ></script>
-      <div id="container-1d006cf28b45e35b1fd4db106a9dd1d0"></div>
       <div class="footer">
          <div class="container">
             <a
